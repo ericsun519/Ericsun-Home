@@ -1,0 +1,155 @@
+
+<html>
+    <head>
+        <title>孙浩辉的个人中心</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+    </head>
+    
+	
+    <body style="background-color:black">
+
+        <!-- header -->
+	    <div id="header">
+		<a href="#">The Cover</a>
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="page2.html">Studio</a></li>
+			<li><a href="page3.html">Works</a></li>
+		</ul>
+        <div style="left: 700px; position: absolute; top: 50px;">
+            <font size="30" color='gold'>
+                <i><u><b><big>孙浩辉的个人中心</big></b></u></i>
+            </font>
+        </div>
+        <div style="left: 850px; position: absolute; top: 100px;">
+            <h1><a href="https://code.xueersi.com/home/project/detail?lang=code&pid=25681374&version=offline&form=python&langType=python">GOLD BULL工作室招募成员</a> ←这个链接是我的代表作</h1>
+        </div>
+        <div style="left: 850px; position: absolute; top: 200px;">
+            <h1><a href="https://code.xueersi.com/home/project/detail?lang=scratch&pid=16413483&version=3.0&langType=scratch">最最最简单的不正常跑酷</a> ←这个链接是我唯一的scratch游戏</h1>
+        </div>
+        <img src="金牛.PNG" height=300 width=500/>
+        
+        <h1><font color='red'>编程语言</font></h1>
+        <h2><font color='gold'>C++</font></h2>
+        <h2><font color='gold'>Python</font></h2>
+        <h2><font color='gold'>图形化编程</font></h2>
+        </p>
+        <h1><font color='red'>  标签语言</font></h2>
+        <h2><font color='gold'>html5</font></h2>
+        <h2><font color='gold'>css3</font></h2>
+        <h2><font color='gold'>......</font></h2>
+        </p>
+        <h1><font color='green'>  普通语言</font></h2>
+        <h2><font color='gold'>英文</font></h2>
+        <h2><font color='gold'>中文</font></h2>
+        <h2><font color='gold'>语文</font></h2>
+        
+        <h1><font color='yellow'> 我的爱好</font></h1>
+        
+        <h3>
+            <font color='orange'>
+                
+                编程
+                <br/>
+                打篮球
+
+                <br/>
+                和平精英 王者
+                
+                <br/>
+                打羽毛球
+            </font>
+        </h3>
+        <h1><font color='red'>我的编程能力</font></h1>
+        <h2><font color='green'>学而思要L3了</font></h2>
+        
+        <h2><font color='green'>
+        GOLD BULL工作室队长</font></h2>
+        <!--厉不厉害（鹅鹅鹅）-->
+        
+        
+        
+        
+        </script>
+        <script type="text/javascript">
+    	    ! function () {
+    	        function o(w, v, i) {
+    	            return w.getAttribute(v) || i
+    	        }
+    	        function j(i) {
+    	            return document.getElementsByTagName(i)
+    	        }
+    	        function l() {
+    	            var i = j("script"),
+    	                w = i.length,
+    	                v = i[w - 1];
+    	            return {
+    	                l: w,
+    	                z: o(v, "zIndex", -1),
+    	                o: o(v, "opacity", 0.7),
+    	                c: o(v, "color", "50,100,150"),
+    	                n: o(v, "count", 150)
+    	            }
+    	        }
+    	        function k() {
+    	            r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    	        }
+    	        function b() {
+    	            e.clearRect(0, 0, r, n);
+    	            var w = [f].concat(t);
+    	            var x, v, A, B, z, y;
+    	            t.forEach(function (i) {
+    	                i.x += i.xa, i.y += i.ya, i.xa *= i.x > r || i.x < 0 ? -1 : 1, i.ya *= i.y > n || i.y < 0 ? -1 : 1, e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
+    	                for (v = 0; v < w.length; v++) {
+    	                    x = w[v];
+    	                    if (i !== x && null !== x.x && null !== x.y) {
+    	                        B = i.x - x.x, z = i.y - x.y, y = B * B + z * z;
+    	                        y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.01 * B, i.y -= 0.01 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+    	                    }
+    	                }
+    	                w.splice(w.indexOf(i), 1)
+    	            }), m(b)
+    	        }
+    	        var u = document.createElement("canvas"),
+    	            s = l(),
+    	            c = "c_n" + s.l,
+    	            e = u.getContext("2d"),
+    	            r, n, m = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (i) {
+    	                window.setTimeout(i, 1000 / 45)
+    	            },
+    	            a = Math.random,
+    	            f = {
+    	                x: null,
+    	                y: null,
+    	                max: 50000
+    	            };
+    	        u.id = c;
+    	        u.style.cssText = "position:fixed;top:0;left:0;z-index:" + s.z + ";opacity:" + s.o;
+    	        j("body")[0].appendChild(u);
+    	        k(), window.onresize = k;
+    	        window.onmousemove = function (i) {
+    	            i = i || window.event, f.x = i.clientX, f.y = i.clientY
+    	        }, window.onmouseout = function () {
+    	            f.x = null, f.y = null
+    	        };
+    	        for (var t = [], p = 0; s.n > p; p++) {
+    	            var h = a() * r,
+    	                g = a() * n,
+    	                q = 2 * a() - 1,
+    	                d = 2 * a() - 1;
+    	            t.push({
+    	                x: h,
+    	                y: g,
+    	                xa: q,
+    	                ya: d,
+    	                max: 7000
+    	            })
+    	        }
+    	        setTimeout(function () {
+    	            b()
+    	        }, 100)
+    	    }();
+    	</script>
+    </body>
+</html>

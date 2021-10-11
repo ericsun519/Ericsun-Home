@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Eric</title>
+	<link rel="icon" href="CONAN.jpg">
+	<style>
+		/*通用设置*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			width: 100%;
+			height: 100%;
+  			background: url(CONAN2.jpg) no-repeat center center fixed;
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+		}
+		a{
+			transition: color 0.2s ease-in-out;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover{
+			color: #e44c65;
+		}
+		/*header*/
+		#header{
+			position: fixed;
+			top: 0;
+			left:0;
+			right:0;
+			height:50px;
+			padding:10px 20px;
+			background-color:black;
+		}
+		#header ul{
+			float:right;
+			width:200px;
+		}
+		#header ul li{
+			float:left;
+			list-style: none;
+			width:60px;
+		}
+		/*page1*/
+		/*手机*/
+		@media screen and (max-width:600px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:10px;
+				width:400px;
+				height:250px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:200px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:40px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:5px;
+				line-height:40px;
+			}
+			#page1 #content{
+				margin-top:10px;
+			}
+		}
+		/*平板*/
+		@media screen and (min-width:600px) and (max-width:960px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:14px;
+				width:560px;
+				height:350px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:280px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:56px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:7px;
+				line-height:56px;
+			}
+			#page1 #content{
+				margin-top:14px;
+			}
+		}
+		/*PC*/
+		@media screen and (min-width:960px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:18px;
+				width:720px;
+				height:450px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:360px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:72px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:9px;
+				line-height:72px;
+			}
+			#page1 #content{
+				margin-top:20px;
+			}
+		}
+		#page1 p{
+			text-indent:2em;
+			line-height:40px;
+			font-family:"楷体";
+			color:black;
+		}
+		/*footer*/
+		#footer{
+			position:absolute;
+			left:45%;
+			bottom:10px;
+		}
+		#footer p{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	
+	<div id="header">
+		<a href="#">The Cover</a>
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="page2.html">Studio</a></li>
+			<li><a href="page3.html">Works</a></li>
+		</ul>
+	</div>
+	<!-- page1 -->
+	<div id="page1">
+		<div id="logo">
+			<img src="CONAN3.jpg" alt="头像" title="Eric"/>
+			<h2>Eric的个人主页</h2>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="CONAN.jpg">
+			<p>Eric的简介 &nbsp;Writer：<a href="https://code.xueersi.com/space/16893346">Eric</a></p>
+			<p>简介：</p>
+			<p>Name : Eric.Sun.</p>
+			<p>AGE : 1100(二进制).</p>
+			<p>Hobby : programming.</p>
+			<p>Best wishes to you!</p>
+			<p><a href="">___________________________________》Edition：3.0《___________________________________</a><p>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<p><a href="https://tstar.rth.app"></a></p>
+	</div>
+</body>
+</html>

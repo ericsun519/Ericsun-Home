@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Eric</title>
+	<link rel="icon" href="CONAN.jpg">
+	<style>
+		/*通用设置*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			width: 100%;
+			height: 100%;
+  			background: url(CONAN2.jpg) no-repeat center center fixed;
+  			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+  			background-size: cover;
+		}
+		a{
+			transition: color 0.2s ease-in-out;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover{
+			color: #e44c65;
+		}
+		/*header*/
+		#header{
+			position: fixed;
+			top: 0;
+			left:0;
+			right:0;
+			height:20px;
+			padding:10px 20px;
+			background-color:black;
+		}
+		#header ul{
+			float:right;
+			width:200px;
+		}
+		#header ul li{
+			float:left;
+			list-style: none;
+			width:60px;
+		}
+		/*page1*/
+		/*手机*/
+		@media screen and (max-width:600px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:10px;
+				width:400px;
+				height:250px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:200px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:40px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:5px;
+				line-height:40px;
+			}
+			#page1 #content{
+				margin-top:10px;
+			}
+		}
+		/*平板*/
+		@media screen and (min-width:600px) and (max-width:960px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:14px;
+				width:560px;
+				height:350px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:280px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:56px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:7px;
+				line-height:56px;
+			}
+			#page1 #content{
+				margin-top:14px;
+			}
+		}
+		/*PC*/
+		@media screen and (min-width:960px){
+			#page1{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				padding:18px;
+				width:720px;
+				height:450px;
+				background-color:rgba(219,219,219,0.5);
+			}
+			#page #logo{
+				width:360px;
+			}
+			#page1 #logo img{
+				float:left;
+				width:72px;
+			}
+			#page1 #logo h2{
+				float:left;
+				padding-left:9px;
+				line-height:72px;
+			}
+			#page1 #content{
+				margin-top:20px;
+			}
+		}
+		#page1 p{
+			text-indent:0em;
+			line-height:50px;
+			font-family:"楷体";
+			color:black;
+		}
+		/*footer*/
+		#footer{
+			position:absolute;
+			left:45%;
+			bottom:10px;
+		}
+		#footer p{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<a href="#">The Cover</a>
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="page2.html">Studio</a></li>
+			<li><a href="page3.html">Works</a></li>
+		</ul>
+	</div>
+	<!-- page2 -->
+	<div id="page1">
+		<div id="logo">
+		    <img src="CONAN3.jpg" alt="头像" title="Eric"/>
+			<h2>Eric的个人主页</h2>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="CONAN.jpg">
+			<p>G.B.工作室&nbsp;创始人：孙浩辉 <a href="https://code.xueersi.com/home/project/detail?lang=code&pid=19945213&version=offline&form=python&langType=python"> 招募 </a>&nbsp;*成员不限*</p>
+			<p>小灰灰工作室：创于2020年9月，成为卓楠工作室旗下，同年12月退出卓楠工作室，小灰灰工作室解散于2021年1月。</p>
+			<p>F1工作室：成立于2021年1月，后更名为G.B.工作室。</p>
+			<p>G.B工作室：室长为Eric，成员3+人，室长微信号：kong181_234-10-08。</p>
+		</div>
+	</div>
+	<!-- footer -->
+	<div id="footer">
+		<p><a href="https://tstar.rth.app"></a></p>
+	</div>
+</body>
+</html>
